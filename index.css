@@ -20,7 +20,6 @@ nav {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
-    /* position: fixed; */
 }
 .logo{
   display: flex;
@@ -68,12 +67,48 @@ main{
     margin-top: 20px;
     border: none;
     color: white;
-    background-color: hsl(60, 100%, 35%);
+    background-color: orange;
     font-weight: 700;
    }
    button:hover{
     cursor: pointer;
-    color: hsl(60, 100%, 35%);
+    color: orange;
     background-color: white;
    }
+}
+
+
+/* Services section */
+.services{
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+  .service-heading{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 10% 0 3% 0;
+  }
+  p{
+    color: gray;
+  }
+}
+.service-types{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 0 10%;
+  i{
+    font-size: 50px;
+    /* color: hsl(55, 100%, 45%); */
+    color: orange;
+  }
+}
+.service-types div{
+  padding: 20px;
+}
+.service-types div h2{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
