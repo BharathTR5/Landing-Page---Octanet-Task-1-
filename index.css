@@ -112,3 +112,122 @@ main{
   font-size: 1.2rem;
   font-weight: 400;
 }
+
+/* work section */
+.work{
+  background-color: #f4f4f4;
+  padding: 5%;
+  text-align: center;
+}
+.work h1{
+  margin: 0 0 50px 0;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.work p{
+  color: #999999;
+  margin: 0 0 3rem 0;
+}
+.imge{
+  position: relative;
+}
+.work .images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 8%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.work .imge:hover{
+  background-color: orange;
+  opacity: 1;
+  transition: 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  img{
+    opacity: 0.2;
+    transition: 0.5s ease;
+    scale: 110%;
+  }
+  .text{
+    opacity: 1;
+  }
+}
+.imge .text{
+  position: absolute;
+  font-size: 50px;
+  z-index: 100;
+  bottom: 45%;
+  left: 46%;
+  opacity: 0;
+  color: white;
+}
+
+/* Skills Section */
+.skills{
+  background-color: white;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  padding: 5%;
+  .skill-text{
+    width: 100%;
+    font-weight: 200;
+    font-stretch: wider;
+    text-align: justify;
+  }
+  .skill-text p{
+      margin-top: 3rem;
+    }
+  .skills-type{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    }
+  .skills-type h2{
+    color: black;
+  }
+}
+
+.skills .progress{
+  height: 8px;
+}
+.skills .progress-title{
+  display: flex;
+  justify-content: space-between;
+}
+.skills .progress-bar{
+  background-color: orange ;
+}
+
+/* Get a quote */
+.getaquote{
+  background-color: orange;
+  color: white;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+.getaquote h1{
+  font-weight: 300;
+  font-size: 2rem;
+}
+.getaquote button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: orange;
+  font-weight: 700;
+  border: 2px solid white;
+ }
+ .getaquote button:hover{
+  background-color: white;
+  color: orange;
+ }
