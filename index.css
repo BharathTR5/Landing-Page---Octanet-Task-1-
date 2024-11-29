@@ -7,12 +7,14 @@
   width: 100%;
   position: fixed;
   z-index: -100;
-  opacity: 60%;
+  opacity: 90%;
   height: 100vh;
+  filter: contrast(100%) brightness(50%);
  }
 
 body{
-  background-color: hsl(0, 0%, 20%);
+  /* background-color: black; */
+  opacity: 100%;
 }
 nav {
     background-color: transparent;
@@ -26,11 +28,12 @@ nav {
   align-items: center;
   img{
     padding:0 10px 15px 0;
+    
   }
 }
-h2{
+.logo-heading{
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 ul{
   display: flex;
@@ -46,6 +49,9 @@ ul li a{
   text-decoration: none;
   cursor: pointer;
   padding-right: 40px;
+}
+ul li a:hover{
+  color: orange;
 }
 
 /* main section */
@@ -230,4 +236,48 @@ img{
  .getaquote button:hover{
   background-color: white;
   color: orange;
+ }
+
+ /* testimonials */
+ .testimonials{
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 5% 10%;
+  display: block;
+  justify-content: center;
+ }
+ .testimonials-hp{
+  text-align: center;
+  padding: 0 0 4rem 0;
+ }
+ .testimonials-p{
+  color: #999999;
+ }
+ .reviews{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+ .review{
+  display: flex;
+  justify-content: space-between;
+ }
+.review .review-image{
+  width: 70px;
+  height: 70px;
+  padding-right: 0px;
+  border-radius: 50%;
+ }
+ .review-text{
+  color: #999999;
+  font-style: italic;
+  font-size: 1.3rem;
+ }
+ .reviewer-name{
+  color: black;
+ }
+
+ /* COntact Section */
+ .contact{
+  height: 60vh;
+  background-color: white;
  }
