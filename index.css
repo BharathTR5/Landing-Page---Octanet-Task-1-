@@ -13,15 +13,32 @@
  }
 
 body{
-  /* background-color: black; */
   opacity: 100%;
 }
+
+/* Navbar */
 nav {
-    background-color: transparent;
-    padding: 20px;
-    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    padding: 1rem 0;
+    width: 100%;
+}
+nav.scrolled{
+  background-color: white;
+  ul li a{
+    color: black;
+  }
+  .logo-heading{
+    color: black;
+  }
+  ul li a:hover{
+    color: orange;
+  }
+  i{
+    color: black;
+  }
 }
 .logo{
   display: flex;
@@ -34,6 +51,11 @@ nav {
 .logo-heading{
   color: white;
   font-size: 1rem;
+}
+nav i{
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
 }
 ul{
   display: flex;
@@ -54,12 +76,44 @@ ul li a:hover{
   color: orange;
 }
 
+/* Navbar responsive */
+@media (max-width: 900px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  nav i{
+    opacity: 1;
+    padding: 1rem 0 0 0;
+  }
+  ul{
+    display: none;
+    position: absolute;
+    right: -5rem;
+  }
+  ul.active{
+    background-color: white;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2.8rem;
+    border-radius: 5%;
+    padding: 1rem;
+    transition: 0.5s ease;
+    a{
+      color: black;
+    }
+  }  
+}
+
 /* main section */
 main{
   color: white;
   height: 100vh;
   text-align: center;
-  margin-top: 10rem;
+  padding-top: 14rem;
    h1{
     font-size: 4rem;
    }
@@ -82,7 +136,15 @@ main{
     background-color: white;
    }
 }
+/* Main section responsive */
+@media (max-width: 430px) {
+  main{
+    h1{
+      font-size: 2rem;
+    }
+  }
 
+}
 
 /* Services section */
 .services{
@@ -117,6 +179,31 @@ main{
   color: black;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* Services responsive section */
+@media (max-width: 650px) {
+  .services{
+    height: 100vh;
+  }
+.service-types{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 3rem;
+  justify-content: center;
+  i{
+    font-size: 30px;
+  }
+}
+.service-types div{
+  padding: 0%;
+}
+.service-types div h2{
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 }
 
 /* work section */
@@ -176,7 +263,7 @@ img{
 /* Skills Section */
 .skills{
   background-color: white;
-  height: 50vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
@@ -210,6 +297,16 @@ img{
   background-color: orange ;
 }
 
+/* Skills Section responsive */
+@media (max-width: 900px) {
+.skills{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  height:100vh
+}
+}
+
 /* Get a quote */
 .getaquote{
   background-color: orange;
@@ -238,6 +335,20 @@ img{
   color: orange;
  }
 
+ /* get a quote responsive */
+ @media (max-width: 900px) {
+ .getaquote h1{
+  font-weight: 300;
+  font-size: 1rem;
+}
+.getaquote button{
+  padding: 10px 10px;
+  margin-top: 20px;
+  color: white;
+  font-size: 0.5rem;
+ }
+}
+
  /* testimonials */
  .testimonials{
   height: 100vh;
@@ -264,7 +375,6 @@ img{
 .review .review-image{
   width: 70px;
   height: 70px;
-  padding-right: 0px;
   border-radius: 50%;
  }
  .review-text{
@@ -275,9 +385,82 @@ img{
  .reviewer-name{
   color: black;
  }
+/* Testimonials responsive */
+@media (max-width: 900px) {
+.reviews{
+  grid-template-columns: 1fr;
+}
+.review .review-image{
+  width: 50px;
+  height: 50px;
+ }
+ .review-text{
+  font-size: 0.8rem;
+ }
+}
 
  /* COntact Section */
  .contact{
-  height: 60vh;
+  height: 55vh;
   background-color: white;
+  padding: 5% 5% 0% 5%;
  }
+ .contact-types{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  padding-bottom: 5%;
+ }
+ .ctype i{
+  font-size: 4rem;
+  color: orange;
+ }
+ .ctype h2{
+  font-size: 1.2rem;
+ }
+ .ctype p{
+  color: #999999;
+ }
+ .footer{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .footer h3{
+  font-size: 1rem;
+  color: #999999;
+  font-weight: 300;
+ }
+ .footer i{
+  color: #999999;
+ }
+ .footer i:hover{
+  color: orange;
+  cursor: pointer;
+ }
+
+ /* Contact section responsive */
+ @media (max-width: 900px) {
+  .contact{
+    height: 40vh;
+    background-color: white;
+    padding: 5% 5% 0% 5%;
+   }
+  .ctype i{
+    font-size: 2rem;
+   }
+   .ctype h2{
+    font-size: 0.6rem;
+   }
+   .ctype p{
+    font-size: 0.5rem;
+   } 
+   .footer h3{
+    font-size: 0.6rem;
+   }
+   .footer i{
+    font-size: 0.8rem;
+   }
+}
+
+

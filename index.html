@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Dream build</title>
+  <link rel="icon" href="./images/logo.png">
   <link rel="stylesheet" href="index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -21,25 +22,26 @@
         <h2 class="logo-heading"> DREAM BUILD</h2>
       </div>
 
-    <div>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
-        <li><a href="#">MAP</a></li>
-      </ul>     
-    </div> 
-    </nav>
+      <i class='bx bx-menu' id="bar"></i>
 
-    <main>
+
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#contact">MAP</a></li>
+      </ul>     
+       </nav>
+
+    <main id="home">
       <h1>We’re Building Your Future</h1>
       <p>Take a step towards the future of construction with Cobuild</p>
       <button>GET QUOTE</button>
     </main>
 
-  <div class="services">
+  <div class="services" id="services">
     <h2 class="service-heading">Our Services</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. <br> Nostrum perferendis fuga aliquid! Minus, obcaecati quam!  </p>
     <div class="service-types">
@@ -66,7 +68,7 @@
     </div>
   </div>
 
-  <div class="work">
+  <div class="work" id="work">
     <h1>Featured Work</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet.</p>
     <div class="images">
@@ -98,7 +100,7 @@
     </div>
   </div>
 
-  <div class="skills">
+  <div class="skills" id="skills">
     <div class="skill-text">
       <h1>We are Expert in this field <br> since almost 20 years</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam ducimus beatae laudantium. Deserunt nisi error illum temporibus quod praesentium dolore ipsa cumque, repellat dolorem esse, eveniet ab ullam cum.</p>
@@ -158,7 +160,7 @@
     <button>Get a Quote</button>
   </div>
 
-  <div class="testimonials">
+  <div class="testimonials" id="testimonials">
     <div class="testimonials-hp">
       <h1 class="testimonial-heading">Our Clients Say</h1>
     <p class="testimonials-p">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor.. <br> Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
@@ -183,9 +185,38 @@
     </div>
   </div>
 
-  <div class="contact">
-    
+  <div class="contact" id="contact">
+    <div class="contact-types">
+      <div class="ctype">
+        <i class='bx bx-home'></i>
+        <h2>Address</h2>
+        <p>220 Marathahalli <br> Bengaluru-560059</p>
+      </div>
+      <div class="ctype">
+        <i class='bx bxs-phone'></i>
+        <h2>Phone</h2>
+       <p>Phone: (04) 491 570 110 <br> Fax: +04 642 021 332</p>
+      </div>
+      <div class="ctype">
+        <i class='bx bxs-envelope' ></i>
+        <h2>Email</h2>
+        <p>support@dreambuild.com <br> Twitter:Dreambuild</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer">
+      <div class="copyrights">
+        <h3>&copy;Bharath T R 2024, All rights reserved.</h3>
+      </div>
+      <div class="s-icons">
+        <i class='bx bxl-facebook' ></i>
+        <i class='bx bxl-whatsapp' ></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-telegram' ></i>
+      </div>
+    </div>
   </div>
 
+  <script src="./script.js"></script>
 </body>
 </html>
